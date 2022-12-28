@@ -16,6 +16,7 @@
       <a href="/about">about</a>
     </nav>
     <h1>홈페이지</h1>
+    <span>Total Posts : <%= posts.length %> </span>
     <ul class="post-list">
       <!-- 내림차순(큰번호 순, 최근 작성 글) -->
       <% for(let i = posts.length - 1; i >= 0; i--) { %>
