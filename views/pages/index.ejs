@@ -24,7 +24,8 @@
           <p>작성일 : <%= posts[i].createdAt.toLocaleString() %></p>
           <h3>id <%= posts[i].id %> : <%= posts[i].post %></h3>
         </div>
-        <form action="/delete/<%= posts[i].id %>" method="post">
+        <form action="/delete/<%= posts[i].id %>" method="post"
+          onsubmit="let result = confirm('삭제하시겠습니까?');if(!result) return false;">
           <button type="submit">삭제</button>
         </form>
       </li>
