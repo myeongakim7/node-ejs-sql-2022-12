@@ -1,0 +1,16 @@
+/* style.css */
+a {
+  color: red;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.post-list > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
